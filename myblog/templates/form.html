@@ -1,0 +1,26 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <title></title>
+
+<script src="static/Js/jquery.min.js"></script>
+<script src="static/Js/function.js"></script>
+</head>
+<body>
+<p id="pa"> hell World.</p>
+<button id="one">click</button>
+<form class="form-inline" role="form" action="/contact/" id="formid" method="post">
+   <div id="f" style="margin-top:20px; margin-left:25px;">
+
+       {% crispy form %}
+
+       <button id="btn">Click Me</button>
+       </div>
+
+</form>
+</div>
+</body>
+</html>
